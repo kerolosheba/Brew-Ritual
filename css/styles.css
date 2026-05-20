@@ -668,10 +668,15 @@ input {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 4px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .tabs a:hover {
+  color: #c47a3b;
+  background-size: 100% 4px;
+}
+
+.tabs li:nth-child(2) a {
   color: #c47a3b;
   background-size: 100% 4px;
 }
