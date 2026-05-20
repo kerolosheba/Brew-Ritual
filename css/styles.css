@@ -671,12 +671,8 @@ input {
   transition: all 0.5s ease;
 }
 
-.tabs a:hover {
-  color: #c47a3b;
-  background-size: 100% 4px;
-}
-
-.tabs li:nth-child(2) a {
+.tabs a:hover,
+.tabs a.active {
   color: #c47a3b;
   background-size: 100% 4px;
 }
