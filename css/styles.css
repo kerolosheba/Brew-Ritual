@@ -661,14 +661,30 @@ input {
 }
 
 .tabs a {
+  position: relative;
   display: block;
   height: 70px;
   color: #2a1a11;
+  transition: all 1s ease;
+}
+
+.tabs a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background: #c47a3b;
+  transition: all 1s ease;
 }
 
 .tabs a:hover {
   color: #c47a3b;
-  border-bottom: 4px solid #c47a3b;
+}
+
+.tabs a:hover::after {
+  width: 100%;
 }
 
 .product-slider {
